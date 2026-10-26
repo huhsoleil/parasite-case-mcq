@@ -1,0 +1,21 @@
+{
+  "name": "parasite-case-mcq",
+  "owner": {
+    "name": "Sun Huh"
+  },
+  "metadata": {
+    "description": "Clinical case-based parasitology MCQ writing skill (Korean output)",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "parasite-case-mcq",
+      "description": "Writes five-option one-best-answer parasitology items from a parasite name or one article, classified by physician task, with evidence passages and optional figures in the stem",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/parasite-case-mcq"
+      ]
+    }
+  ]
+}

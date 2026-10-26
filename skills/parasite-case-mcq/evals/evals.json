@@ -1,0 +1,37 @@
+{
+  "skill_name": "parasite-case-mcq",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "첨부한 case.pdf 논문을 바탕으로 시험 문항을 만들어 주세요.",
+      "expected_output": "Mode B: three Korean items on three different physician tasks, article notes, and one cropped figure in a stem.",
+      "files": ["../../../examples/neurocysticercosis-case/case.pdf"],
+      "expectations": [
+        "Exactly three item files are saved in items/, each testing a different physician task",
+        "items/<topic>_article-notes.md is saved and groups findings by physician task",
+        "The response names the physician task that was left out and why",
+        "Each item has five options numbered 1-5 and no 'all/none of the above' option",
+        "Each evidence section quotes a passage that appears verbatim in case.pdf, with its location",
+        "At least one item embeds a PNG cropped from an article figure in its vignette, with no panel labels or asterisks",
+        "The neurocysticercosis route-of-infection item, if present, keys egg ingestion rather than undercooked pork",
+        "Vignettes are fictionalized: age, sex, and timeline differ from the 45-year-old man in the article",
+        "All item text is Korean, with English terms in parentheses at first mention",
+        "The response ends with a summary table by topic and physician task, plus answer-key and item-level distributions"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "간흡충(Clonorchis sinensis) 문항 4개 만들어 주세요.",
+      "expected_output": "Mode A: four Korean items covering all four physician tasks.",
+      "files": [],
+      "expectations": [
+        "Exactly four item files are saved, one for each of the four physician tasks",
+        "No more than one item is at the 암기형 level",
+        "The diagnosis item does not name the parasite or disease in the stem",
+        "Correct-answer positions are not all the same",
+        "References are verifiable guidelines or textbooks, or are marked 출처 확인 필요(source verification required)",
+        "No quotation marks are used for remembered textbook wording"
+      ]
+    }
+  ]
+}
