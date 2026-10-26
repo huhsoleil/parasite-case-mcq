@@ -146,3 +146,6 @@ format: Mode B with the example article and Mode A with a parasite name.
 Skill instructions: Apache License 2.0 (see `LICENSE`). The example
 article and the files derived from it in `examples/neurocysticercosis-case/`
 are CC BY-NC 4.0; see `THIRD_PARTY_NOTICES.md`.
+
+## Skill.sh   search
+[![skills.sh](https://skills.sh/b/huhsoleil/parasite-case-mcq)](https://skills.sh/huhsoleil/parasite-case-mcq)
